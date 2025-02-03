@@ -8,7 +8,7 @@ public class Anagram {
 
 		String s1 = "Krishan";
 		String s2 = "rishank";
-
+		String s3="";
 		
 		s1=s1.toLowerCase();
 		s2=s2.toLowerCase();
@@ -24,6 +24,21 @@ public class Anagram {
 		} else {
 			System.out.println("it's not Anagram");
 		}
+
+			System.out.println("\n***************For Check Palindrome *****************\n");
+				for(int i=s1.length()-1;i>=0;i--){
+
+					s3=s3+s1.charAt(i);
+
+				}
+					System.out.println(s3);
+
+					if(s1.equals(s3)){
+							System.out.println("String is palindrome");
+					}else{
+						System.out.println("String is Not palindrome");
+					}
+
 
 	}
 
