@@ -1,6 +1,8 @@
 package interviewQuestion;
 
 import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
 
 public class Anagram {
 
@@ -39,7 +41,10 @@ public class Anagram {
 						System.out.println("String is Not palindrome");
 					}
 
-
+					String [] s1 = {"Balazs", "Vikrant", "Mohasin", "Ahmed" ,"Hanumaan","Jayshreeram"};
+					
+					List<String> stringLenght= Arrays.asList(s1);
+					stringLenght.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
 	}
 
 }
